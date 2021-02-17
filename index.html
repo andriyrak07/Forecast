@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid ccc">
+
+        <div class="row header">
+            <div class="col text-center">
+                <h1>Прогноз погоди</h1>
+            </div>
+        </div>
+
+        <div class="content">
+
+            <div class="block text-center">
+
+                <div class="main">
+                    <h2 class="city_name kyiv_name"></h2>
+                    <h3 class="temperature kyiv_temperature"></h3>
+                    <h4 class="weather kyiv_weather"></h4>
+                    <div class="img_description kyiv_img"></div>
+                </div>
+                
+                <div class="more" id="more-kyiv">
+                    <p>Вітер: <span class="wind kyiv_wind"></span> м/сек</p>
+                    <p>Тиск: <span class="pressure kyiv_pressure"></span></p>
+                    <p>Схід: <span class="sunrise kyiv_sunrise"></span></p>
+                    <p>Захід: <span class="sunset kyiv_sunset"></span></p>
+
+                    <button class="btn btn-primary" onclick="show()">Show</button>
+                    <button class="btn btn-primary" onclick="hide()">Hide</button>
+                </div>
+
+                <a class="link" href="forecast_kyiv/forecast_kyiv.html">More info</a>
+            </div>
+
+            <div class="block text-center">
+
+                <div class="main">
+                    <h2 class="city_name london_name"></h2>
+                    <h3 class="temperature london_temperature"></h3>
+                    <h4 class="weather london_weather"></h4>
+                    <div class="img_description london_img"></div>
+                </div>
+                
+                <div class="more" id="more-london">
+                    <p>Вітер: <span class="wind london_wind"></span> м/сек</p>
+                    <p>Тиск: <span class="pressure london_pressure"></span></p>
+                    <p>Схід: <span class="sunrise london_sunrise"></span></p>
+                    <p>Захід: <span class="sunset london_sunset"></span></p>
+
+                    <button class="btn btn-primary" onclick="showl()">Show</button>
+                    <button class="btn btn-primary" onclick="hidel()">Hide</button>
+                </div>
+
+                <a class="link" href="forecast_london/forecast_london.html">More info</a>
+            </div>
+
+            <div class="block text-center">
+
+                <div class="main">
+                    <h2 class="city_name newyork_name"></h2>
+                    <h3 class="temperature newyork_temperature"></h3>
+                    <h4 class="weather newyork_weather"></h4>
+                    <div class="img_description newyork_img"></div>
+                </div>
+                
+                <div class="more" id="more-new-york">
+                    <p>Вітер: <span class="wind newyork_wind"></span> м/сек</p>
+                    <p>Тиск: <span class="pressure newyork_pressure"></span></p>
+                    <p>Схід: <span class="sunrise newyork_sunrise"></span></p>
+                    <p>Захід: <span class="sunset newyork_sunset"></span></p>
+
+                    <button class="btn btn-primary" onclick="shown()">Show</button>
+                    <button class="btn btn-primary" onclick="hiden()">Hide</button>
+                </div>
+
+                <a class="link" href="forecast_new-york/forecast_new-york.html">More info</a>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="logic/kiev.logic.js"></script>
+    <script src="logic/london.logic.js"></script>
+    <script src="logic/new-york.logic.js"></script>
+    <script src="another.js"></script>
+</body>
+</html>

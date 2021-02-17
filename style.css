@@ -1,0 +1,74 @@
+.container-fluid {
+    background-color: rgb(182, 182, 182);
+    color: black;
+}
+
+.header {
+    height: auto;
+    background-color: black;
+    color: aliceblue;
+}
+.header h1, h2{
+    margin: 10px 0;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+}
+
+.block {
+    height: auto;
+    background-color: rgb(185, 185, 185);
+    overflow: hidden;
+}
+
+.city_name {
+    margin: 20px;
+    color: black;
+}
+
+.temperature {
+    color: black;
+}
+
+.weather {
+    color: black;
+}
+
+.main {
+    position: relative;
+    z-index: 1;
+    background-color: rgb(185, 185, 185);
+}
+.more {
+    position: relative;
+    transition: all .5s;
+    transform: translate(0,-120px);
+    transition: 700ms;
+}
+.table {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+th {
+    text-align: center;
+    padding: 0;
+    min-width: 80px;
+}
+.picture {
+    width: 100px;
+    height: 100px;
+}
+.link {
+    font-size: 15px;
+    color: red;
+    cursor: pointer;
+}
+.link:hover {
+    text-decoration: none;
+    color: rgb(105, 0, 0);
+    transition: .5s linear;
+}
